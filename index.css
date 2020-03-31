@@ -1,0 +1,140 @@
+table{
+	border: 1px solid #111;
+}
+
+
+/*#tr_id{
+	border: 2px solid #303333;
+	background-color: #CCC; 
+	margin: 0px -5px 0px -5px;
+	padding: 0px 0px 0px 0px;
+}*/
+
+#container_id, 
+#container_name, 
+#container_level, 
+#container_description,
+#container_power, 
+#container_attack, 
+#container_armor, 
+#container_damage,
+#container_mitigation, 
+#container_played, 
+#container_victory, 
+#container_defeat,
+#container_draw{
+	background-color: #CCC; 
+	margin: 0px -20px 0px -20px;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+
+/*div:nth-child(odd)*/
+tr div:nth-child(even){
+	background-color: #DBF3F4; 
+	border: 2px solid #DBF3F4;
+	margin: 0px -2px -2px -2px;
+	padding: 0px 0px 0px 0px;
+}
+
+tr div:nth-child(odd){
+	background-color: white; 
+	border: 2px solid white;
+	margin: 0px -2px 0px -2px;
+	padding: 0px 0px 0px 0px;
+}
+
+/*AFFICHAGE CARTE */
+.conteneur-grid{
+	display: grid;
+	grid-template-columns: 120px 120px 120px;
+	grid-gap: 0px 0px;
+	grid-template-areas:
+	"a b b"
+	"a c d"
+	"e e x"
+	"e e y"
+	"e e z"
+	"f f f" 
+}
+
+/*.header{
+	height: 60px;
+	grid-area: a;
+	background-color: #FF7F24;
+}*/
+
+/*.header-conteneur-grid{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}*/
+
+#header_id{
+	height:110px;
+	grid-area: a;
+	background-color: green;
+	color: white;
+}
+
+#header_name{
+	height: 60px;
+	grid-area: b;
+	background-color: green;
+	color: white;
+}
+
+#header_played{
+	height: 50px;
+	grid-area: c;
+	background-color: green;
+	color: white;
+}
+
+#header_victory{
+	height: 50px;
+	grid-area: d;
+	background-color: green;
+	color: white;
+}
+
+.item{
+	height: 180px;
+	grid-area: e;
+	background-color: #1a1a1a;
+	color: white;
+}
+
+/*.aside{
+	height: 240px;
+	grid-area: e;
+	background-color: #292B2C;
+}*/
+
+#id_aside_power{
+	height: 60px;
+	grid-area: x;
+	background-color: black;
+	color: white;
+}
+
+#id_aside_attack{
+	height: 60px;
+	grid-area: y;
+	background-color: black;
+	color: white;
+}
+
+#id_aside_defeat{
+	height: 60px;
+	grid-area: z;
+	background-color: black;
+	color: white;
+}
+
+.item_footer{
+	height: 60px;
+	grid-area: f;
+	background-color: black;
+	color: white;
+}
